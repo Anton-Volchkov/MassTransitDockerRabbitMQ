@@ -1,6 +1,13 @@
 version: '3.4'
 
 services:
+  rabbitmq:
+    image: masstransit/rabbitmq
+    container_name: rabbitmq
+    hostname: local-rabbitmq
+    ports:
+        - 5672:5672
+        - 15672:15672
   webapplication1:
     image: ${DOCKER_REGISTRY-}webapplication1
     build:
@@ -11,3 +18,4 @@ services:
     build:
       context: .
       dockerfile: WebApplication2/Dockerfile
+  
