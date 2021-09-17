@@ -15,9 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\TestNotification\TestNotification.csproj" />
     <ProjectReference Include="..\TestNotification\TestNotification.csproj" />
   </ItemGroup>
-
 
 </Project>
